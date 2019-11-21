@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <head>
+        <title>Solicitud</title>
+        <link rel="stylesheet" type="text/css" href="../proyectocss.css">
+    </head>
+    <body cz-shortcut-listen="true" background="../fotos/propiapizza.png">
+        <fieldset>
+            <legend><h1>¿Tienes tu <mark>propia</mark> pizza? ¡Haganoslo Saber!|<a class="boton_personalizado" href="../lista/pizzas.html">Volver a la lista de pizzas</a>|</h1></legend>
+        <h3>Hay diferentes formas de mandar tu propia pizza:</h3>
+        <ol>
+            <li><h3>Puedes ir a nuestro restaurante y comentarnos tu propuesta</h3></li>
+            <li><h3>Contactando con nosotros por teléfono --> <i style="color:blueviolet"> 954774567</i></h3></li>
+            <li><h3>Puedes escribirnos a nuestro correo --> <em style="color:red"><a href="mailto:pizzascoriadelrio@gmail.com">Mandar Mensaje</a></em></h3></li>
+            <li><h3>O rellenado este formulario:</h3></li>
+            <form action="insertasolicitud.php" method="post">
+                    <p>* Nombre:<br>
+                    <input type="text" name="nombre" required></p>
+                    <p>Apellidos:<br>
+                    <input type="text" name="apellido"></p>
+                    <p>* Telefono:<br>
+                    <input type="number" name="telefono" required></p>
+                    <p>* Nombre de la pizza:<br>
+                    <input type="text" name="pizza" required></p>
+                    <p>De donde proviene:<br>
+                    <input type="text" name="lugar"></p>
+                    <p>* Adjunta una foto de la pizza <input type="file" name="adjunto" accept=".pdf,.jpg,.png" required> </br></br></p>
+                    <p><cite>Los campos con * son obligatorios</cite></p>
+                    <p><input type="submit" name="enviar5" value="Enviar">        <img width="50" height="50" src="../fotos/formulario.png"	>	
+        </ol>
+            </form>
+        </fieldset>
+    </body>
+        
+</html>

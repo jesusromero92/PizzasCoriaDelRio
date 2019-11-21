@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="../../proyectocss.css">
+<title>Americana</title>
+<link type="text/css" href="./americana_files/styles.css" rel="stylesheet">
+<script type="text/javascript" src="./americana_files/jquery.js.descarga"></script>
+<script type="text/javascript">
+function mostrar(id) {
+	if (id == "seleccionar") {
+		$("#seleccionar").show();
+		$("#pequeña").hide();
+		$("#mediana").hide();
+		$("#Familiar").hide();
+	}
+	
+	if (id == "pequeña") {
+		$("#seleccionar").hide();
+		$("#pequeña").show();
+		$("#mediana").hide();
+		$("#Familiar").hide();
+	}
+	
+	if (id == "mediana") {
+		$("#seleccionar").hide();
+		$("#pequeña").hide();
+		$("#mediana").show();
+		$("#Familiar").hide();
+	}
+	
+	if (id == "Familiar") {
+		$("#seleccionar").hide();
+		$("#pequeña").hide();
+		$("#mediana").hide();
+		$("#Familiar").show();
+	}
+}
+</script>
+</head>
+
+<body background="../../fotos/fondoamericana.png"
+	<fieldset>
+		<legend><h1>Pida aquí su Pizza Americana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |<a class="boton_personalizado" href="../pizzas.html">Volver a la lista de pizzas</a>|<a class="boton_personalizado" href="../../contactar/contactar.html">Contactar</a>|<a class="boton_personalizado" href="../../index.html">Volver al índice</a>|</a></h1></legend>
+		<form action="https://www.jose-aguilar.com/scripts/jquery/select-show-forms/index.php" method="post">
+		Tamaño: 
+		<select id="status" name="status" onchange="mostrar(this.value);">
+			<option value="seleccionar">Seleccionar</option>
+			<option value="pequeña">Pequeña</option>
+			<option value="mediana">Mediana</option>
+			<option value="Familiar">Familiar</option>
+		 </select>
+	</form>
+	
+	<div id="seleccionar" class="element" style="display: none;">
+		<h2>Pizza Americana</h2>
+		<img width="280" height="175" src="../../fotos/pizza2.jpg">
+	</div>
+	
+	<div id="pequeña" class="element" style="display: none;">
+		<h2>El precio sería de <mark>4,9€</mark></h2>
+		<h3>Rellene aquí sus datos para mantenernos en contacto</h3>
+		<form action="insertamargarita.php" method="post">
+			Tamaño Seleccionado
+			<input type="radio" name="pequeña" value="x" checked>Pequeña </br> </br>
+			Nombre:<br>
+			<input type="text" name="nombre" required></p>
+			Calle:<br>
+			<input type="text" name="calle" required></p>
+		    Telefono:<br>
+			<input type="number" name="telefono" maxlenght="9" minlength="1" required></p>
+			Codigo Postal:<br>
+			<input type="number" name="postal"></p>
+			<p>¿Reparto a domicilio?<u>+ 1€</u></p>
+			<input type="radio" name="domicilio" value="si">Si
+	
+	<br>
+			<input type="submit" name="enviar1" value="Pedir Ya"> 
+		</form>
+	</div>
+	
+	<div id="mediana" class="element" style="display: none;">
+			<h2>El precio sería de <mark>7,50€</mark></h2>
+			<h3>Rellene aquí sus datos para mantenernos en contacto</h3>
+			<form action="insertamargarita.php" method="post">
+				Tamaño Seleccionado
+				<input type="radio" name="mediana" value="x" checked>Mediana </br> </br>
+			    Nombre:<br>
+				<input type="text" name="nombre" required></p>
+				Calle:<br>
+				<input type="text" name="calle" required></p>
+			    Telefono:<br>
+				<input type="number" name="telefono" maxlenght="9" required></p>
+				Codigo Postal:<br>
+				<input type="number" name="postal"></p>
+				<p>¿Reparto a domicilio?<u>+ 1€</u></p>
+				<input type="radio" name="domicilio" value="si">Si
+				<br>
+			<input type="submit" name="enviar1" value="Pedir Ya"> 
+			</form>
+	</div>
+	
+	<div id="Familiar" class="element" style="display: none;">
+		<h2>El precio sería de <mark>9,60€</mark></h2>
+		<h3>Rellene aquí sus datos para mantenernos en contacto</h3>
+		<form action="insertamargarita.php" method="post">
+			Tamaño Seleccionado
+			<input type="radio" name="Familiar" value="x" checked>Familiar </br> </br>
+			Nombre:<br>
+			<input type="text" name="nombre" required></p>
+		    Calle:<br>
+			<input type="text" name="calle" required></p>
+			Telefono:<br>
+			<input type="number" name="telefono" maxlenght="9" required></p>
+			Codigo Postal:<br>
+			<input type="number" name="postal"></p>
+			<p>¿Reparto a domicilio?<u>+ 1€</u></p>
+			<input type="radio" name="domicilio" value="si">Si
+			<br>
+		<input type="submit" name="enviar1" value="Pedir Ya"> 
+		</form>
+	</div>
+		
+	</p<nombre:<br></form></div>
+	
+	</fieldset>
+	</body></html>
